@@ -3,6 +3,7 @@
 # How to run?
 
 ```sh
+R -f ./src/plotGraph.r
 open Rplots.pdf
 ```
 
