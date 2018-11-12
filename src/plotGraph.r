@@ -1,2 +1,3 @@
-autos_data <- read.table("./data/autos.csv", header=T, sep=",")
-dotchart(t(autos_data))
+dependency <- read.csv(file="./data/dependency.csv", header=T)
+plot(dependency, xlim=c(0,1))
+abline(1,-1)
