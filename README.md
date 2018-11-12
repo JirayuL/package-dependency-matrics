@@ -1,6 +1,6 @@
 # package-dependency-matrics
 
-We use this project to ![Apache Forrest](https://forrest.apache.org/)
+We use this project to [Apache Forrest](https://forrest.apache.org/)
 
 # How to run?
 
@@ -9,8 +9,9 @@ R -f ./src/plotGraph.r
 open Rplots.pdf
 ```
 
-Result:
-![alt text](https://github.com/JirayuL/package-dependency-matrics/blob/master/src/Rplots.pdf)
+## Result:
+
+![result](https://github.com/JirayuL/package-dependency-matrics/blob/master/src/Rplots.pdf)
 
 ## Contributor
 
