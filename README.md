@@ -1,6 +1,6 @@
 # package-dependency-matrics
 
-We use this project to [Apache Forrest](https://forrest.apache.org/)
+We use analyze this project [Apache Forrest](https://forrest.apache.org/)
 
 # How to run?
 
