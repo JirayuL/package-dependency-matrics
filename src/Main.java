@@ -5,6 +5,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
+    // Data should store in data/dependency.csv
 		File file = new File("");
 
 		String[] jcdFiles = file.list();
