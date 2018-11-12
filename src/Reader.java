@@ -32,6 +32,7 @@ public class Reader {
 		}
 	}
 	
+	//Get All file from directory
 	public List<String> getAllFile(final File folder) {
 	    for (final File fileEntry : folder.listFiles()) {
 	        if (fileEntry.isDirectory()) {

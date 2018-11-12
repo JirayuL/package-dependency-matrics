@@ -7,7 +7,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		File file = new File("/Users/mark/Documents/WSP/forrest/main/java/org/apache/forrest");
+		File destination = new File("/Users/mark/Documents/WSP/package-dependency-matrics/src/data/dependency.csv");
 		Reader read = new Reader();
+		Writer write = new Writer(destination);
+		write.writeHeader();
 		List<String> allFile = new ArrayList<String>();
 		allFile = read.getAllFile(file);
 		System.out.println("Files Found: " + allFile.size());
@@ -20,9 +23,12 @@ public class Main {
 				System.out.println("na: " + read.getNa());
 				PackageInfo pack = new PackageInfo(read.getNa(), read.getNc(), read.getCa(), read.getCe());
 				DecimalFormat df = new DecimalFormat("#.######");
+				String in = df.format(pack.getInstability());
+				String ab = df.format(pack.getAbstractness());
+				write.writeToFile(in, ab);
 				System.out.println("Instability: " + df.format(pack.getInstability()));
 				System.out.println("Abstractness: " + df.format(pack.getAbstractness()));
 			}
-		}
+		} write.close();
 	}
 }
